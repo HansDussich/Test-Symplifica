@@ -21,7 +21,7 @@ public class OrderController {
     @GetMapping
         public String getAllOrders(Model model){
         model.addAttribute("orders", orderService.getOrders());
-        model.addAttribute("orders", productService.getAllProducts());
+        model.addAttribute("products", productService.getAllProducts());
         return "orders";
     }
 
